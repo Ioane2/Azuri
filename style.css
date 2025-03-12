@@ -96,7 +96,7 @@ div {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
     gap: 30px; /* ფოტოების დაშორება */
 }
