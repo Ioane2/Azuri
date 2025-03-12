@@ -43,7 +43,7 @@ h1{
     text-align: center;
 }
 
-#azurieli2{
+/* #azurieli2{
     margin-left: 40%;
 }
 #azurieli1{
@@ -67,7 +67,7 @@ h1{
 }
 #ekip1 {
     margin-left: 18%;
-}
+} */
 
 #io{
     font-size: larger;
@@ -76,3 +76,46 @@ h1{
 footer{
     margin-top: 70px;
 }
+
+/* div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 20px; /* ფოტოების დაშორება */
+/* }
+
+div:has(img:nth-child(2)) {
+    justify-content: space-between;
+}  */
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 30px; /* ფოტოების დაშორება */
+}
+
+div img {
+    /* max-width: calc(20% - 20px);  */
+    
+    flex-shrink: 0;
+}
+
+@media (max-width: 1024px) { /* თუ არ ეტევა, 3+2 განლაგება */
+    div img {
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) { /* თუ უფრო ვიწროა, 2+2+1 განლაგება */
+    div img {
+        max-width: calc(50% - 20px);
+    }
+}
+
